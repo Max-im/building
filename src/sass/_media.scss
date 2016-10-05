@@ -1,0 +1,265 @@
+/*@import media*/
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.nav{	
+		position: relative;
+		nav{
+			.toggleMenu{
+				display: block;
+			}
+			a{
+				padding: 5px 30px;
+			}
+		}
+		.mainMenu{
+			position: absolute;
+			display: none;
+			z-index: 20;
+
+			li{
+				display: block;
+				background: #2a2d32;
+			}
+		}
+	}
+
+	.NB-Wrap{
+		.newsAndBanners{
+			.news{
+				width: 100%;
+				.newsWrap{
+					.news-1-Img{
+						width: 150px;
+						height: 150px;
+					}
+					.newsTextNote{
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+
+	
+	section.brandsLogo{
+		.bLogoWrap{
+				width: 33%;
+		}
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.advantages{
+		>section{
+			display: inline-block !important;
+			width: 100% !important;
+		}
+	}
+
+	section .services{
+		.servWrap{
+			>article{
+				width: 48%;
+			}
+		}
+	}	
+
+
+	footer{
+		.footWrap{
+			section.footItem{
+				ul{
+					li{
+						a{
+							font-size: 11px !important;
+						}
+					}
+				}
+			}
+		}
+		address{
+			.addrWrap{
+				div{
+					float: none;
+					margin: 10px auto;
+					display: block;
+					i{
+						margin: 0 5px 0 0;
+					}
+				}
+				.right{
+					float: none;
+					text-align: right;
+				}
+			}
+		}
+	}
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+.NB-Wrap{
+		.newsAndBanners{
+			.news{
+				width: 100%;
+				.newsWrap{
+					.news-1-Img{
+						width: 100px;
+						height: 100px;
+					}
+					.newsTextNote{
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+
+	section.brandsLogo{
+		.bLogoWrap{
+				width: 50%;
+		}
+	}	
+
+
+	footer{
+		.footWrap{
+			section.footItem{
+				width: 49% !important;
+				margin: 0 0 40px 0 !important;
+				ul{
+					li{
+						a{
+							font-size: 13px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+	.nav{
+		.form{
+			#search{
+				width: 140px;
+			}
+		}
+	}
+
+	section .services{
+		.servWrap{
+			>article{
+			width: 98%;
+			border-bottom: 2px solid #f4b60d;
+			margin: 0 0 30px 0;
+			figure{
+				margin: 0 50px !important;
+			}
+			}
+
+		}
+	}	
+
+
+	.NB-Wrap{
+		.newsAndBanners{
+			.news{
+				.newsWrap{
+					.news-1-Img{
+						width: 150px;
+						height: 150px;
+						display: block;
+						margin: 0 auto;
+					}
+					.newsTextNote{
+						width: 100%;
+						display: block;
+						margin: 20px auto;
+					}
+				}
+			}
+		}
+	}
+
+
+	section.brandsLogo{
+		.bLogoWrap{
+				width: 100%;
+		}
+	}	
+
+	footer{
+		.footWrap{
+			section.footItem{
+				display: block !important; 
+				margin: 20px auto !important;
+				width: 50% !important;
+			}
+		}
+	}
+
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+	.nav{
+		.form{
+			width: 100%;
+			background: #2a2d32;
+			display: block;
+			padding: 0;
+			#search{
+				width: 80%;
+				float: none;
+				margin: auto;
+				display: block;
+			}
+		}
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px){
+	.mainMenu{
+		display: block !important;
+	}		
+}
+
+
