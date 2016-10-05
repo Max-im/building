@@ -353,13 +353,13 @@ news and baners
 	 			display: inline-block;
 				width: 100px;
 				height: 100px;
-				background-image: url(/img/news1.jpg);
+				background-image: url(../img/news1.jpg);
 				background-size: cover;
 				position: relative;
 			}
 			.news-2-Img{
 				@extend .news-1-Img;
-				background-image: url(/img/news2.jpg);
+				background-image: url(../img/news2.jpg);
 			}
 			.dateInfo{
 				position: absolute;
@@ -476,33 +476,33 @@ news and baners
 			height: 70px;
 			display: block;
 			margin: 0 auto;
-			background-image: url(/img/brand1.jpg);
+			background-image: url(../img/brand1.jpg);
 			/*background-size: cover;*/
 			background-repeat: no-repeat;
 			vertical-align: top;
 		}
 		.bLogo2{
 			@extend .bLogo1;
-			background-image: url(/img/brand2.jpg);
+			background-image: url(../img/brand2.jpg);
 		}
 		.bLogo3{
 			@extend .bLogo1;
 			position: relative;
 			left: -10px;
 			min-width: 185px;
-			background-image: url(/img/brand3.jpg);
+			background-image: url(../img/brand3.jpg);
 		}
 		.bLogo4{
 			@extend .bLogo1;
-			background-image: url(/img/brand4.jpg);
+			background-image: url(../img/brand4.jpg);
 		}
 		.bLogo5{
 			@extend .bLogo1;
-			background-image: url(/img/brand5.jpg);
+			background-image: url(../img/brand5.jpg);
 		}
 		.bLogo6{
 			@extend .bLogo1;
-			background-image: url(/img/brand6.jpg);
+			background-image: url(../img/brand6.jpg);
 		}
 	}
 }

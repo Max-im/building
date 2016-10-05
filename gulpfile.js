@@ -33,6 +33,9 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'src/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		'src/libs/jquery-ui/jquery-ui.min.js', // Берем jQuery-ui
+		'src/libs/lodash/dist/lodash.min.js', // Берем lodash
+		// 'src/libs/lodash/dist/lodash.core.min.js', // Берем lodash
+		// 'src/libs/lodash/dist/lodash.fp.min.js', // Берем lodash
 		'src/libs/owlcarousel/owl-carousel/owl.carousel.min.js', // Берем OwlCarousel
 		'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
@@ -74,6 +77,8 @@ gulp.task('clean', function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
+
+
 gulp.task('img', function() {
 	return gulp.src('src/img/**/*') // Берем все изображения из src
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
@@ -85,13 +90,13 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'src/css/style.min.css',
 		'src/css/libs.min.css'
 		])
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
@@ -101,6 +106,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
+
+	var buildJSON = gulp.src('src/*.json') // Переносим json в продакшен
+	.pipe(gulp.dest('dist/json'));
 
 });
 

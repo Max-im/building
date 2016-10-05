@@ -514,11 +514,11 @@ news and baners
         display: inline-block;
         width: 100px;
         height: 100px;
-        background-image: url(/img/news1.jpg);
+        background-image: url(../img/news1.jpg);
         background-size: cover;
         position: relative; }
       .newsAndBanners .news .newsWrap .news-2-Img, .newsAndBanners .banners .newsWrap .news-2-Img {
-        background-image: url(/img/news2.jpg); }
+        background-image: url(../img/news2.jpg); }
       .newsAndBanners .news .newsWrap .dateInfo, .newsAndBanners .banners .newsWrap .dateInfo {
         position: absolute;
         left: -15px;
@@ -596,23 +596,23 @@ news and baners
       height: 70px;
       display: block;
       margin: 0 auto;
-      background-image: url(/img/brand1.jpg);
+      background-image: url(../img/brand1.jpg);
       /*background-size: cover;*/
       background-repeat: no-repeat;
       vertical-align: top; }
     .brandsLogo .bLogoWrap .bLogo2 {
-      background-image: url(/img/brand2.jpg); }
+      background-image: url(../img/brand2.jpg); }
     .brandsLogo .bLogoWrap .bLogo3 {
       position: relative;
       left: -10px;
       min-width: 185px;
-      background-image: url(/img/brand3.jpg); }
+      background-image: url(../img/brand3.jpg); }
     .brandsLogo .bLogoWrap .bLogo4 {
-      background-image: url(/img/brand4.jpg); }
+      background-image: url(../img/brand4.jpg); }
     .brandsLogo .bLogoWrap .bLogo5 {
-      background-image: url(/img/brand5.jpg); }
+      background-image: url(../img/brand5.jpg); }
     .brandsLogo .bLogoWrap .bLogo6 {
-      background-image: url(/img/brand6.jpg); }
+      background-image: url(../img/brand6.jpg); }
 
 /*----------------*/
 /*footer*/
