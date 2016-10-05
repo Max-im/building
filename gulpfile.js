@@ -107,7 +107,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
 
-	var buildJSON = gulp.src('src/*.json') // Переносим json в продакшен
+	var buildJSON = gulp.src('src/json/*.json') // Переносим json в продакшен
 	.pipe(gulp.dest('dist/json'));
 
 });
