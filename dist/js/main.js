@@ -104,22 +104,22 @@
 	var arrFriendsCopy = [];
 	_.each(arrFriends, function(val, i){
 		arrFriendsCopy[i] = val;
-	})
+	});
 	arrFriends.sort(function(a,b){return b - a});
 	var newArr = [];
 	_.each(arrFriendsCopy, function(val, i){
 		_.each(arrFriends, function(val, n){
 			if (arrFriends[i]==arrFriendsCopy[n]) {
 			newArr.push(arrName[n]);
-			}		
-		})
-	})
+			};
+		});
+	});
 	newArr = _.uniq(newArr);
 	console.log(newArr);
 	console.log(arrFriends);
 	console.log('============================');
 	return newArr;
-})()
+})();
 
 /* 
 	----- 3. -----
@@ -138,10 +138,7 @@
 		return _.uniq(allFriends);
 	}
 
-
-getFriends()
-
-
+	getFriends();
 
 
 })(jQuery);

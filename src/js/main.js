@@ -124,46 +124,21 @@
 /* 
 	----- 3. -----
 */
-// 	console.log("task 3");		
-
-// 	function getFriends(){
-// 		// var friendsArr = [];
-// 		var allFriends = [];
-// 		_.each(myObj, function(val){
-// 			_.each(val.friends, function(val, i){
-// 				allFriends.push(val.name);
-// 			});
-// 		});
-// 		console.log(_.uniq(allFriends));		
-// 		return _.uniq(allFriends);
-// 	}
-
-// getFriends();
-
-console.log("task 3");		
+	console.log("task 3");		
 
 	function getFriends(){
 		// var friendsArr = [];
 		var allFriends = [];
-
-		// var arrey = _.flattenDeep(myObj);
-		// console.log(arrey);
-
 		_.each(myObj, function(val){
-			
-			console.log(_.flattenDeep(val.name));
-
-		})
-		// 	_.each(val.friends, function(val, i){
-		// 		allFriends.push(val.name);
-		// 	});
-		// });
-		// console.log(_.uniq(allFriends));		
-		// return _.uniq(allFriends);
+			_.each(val.friends, function(val, i){
+				allFriends.push(val.name);
+			});
+		});
+		console.log(_.uniq(allFriends));		
+		return _.uniq(allFriends);
 	}
 
-getFriends();
-
+	getFriends();
 
 
 })(jQuery);
